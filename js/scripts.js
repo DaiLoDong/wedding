@@ -184,7 +184,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Wedding - Edward & Sara",
+            title: "Wedding - Edward and Sara",
 
             // Event start date
             start: new Date('Oct 10, 2027 12:00'),

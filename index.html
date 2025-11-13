@@ -4,25 +4,97 @@
   <meta charset="utf-8">
   <title>Private Page</title>
   <style>
-    body {font-family:sans-serif; text-align:center; padding-top:60px;}
-    input {padding:6px;}
+    /* ---- overall page layout ---- */
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ---- card container ---- */
+    .login-card {
+      background: #fff;
+      padding: 40px 35px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      max-width: 320px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .login-card h3 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #333;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ---- form fields ---- */
+    .login-card input[type="password"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.3s;
+      box-sizing: border-box;
+    }
+
+    .login-card input[type="password"]:focus {
+      border-color: #5563DE;
+    }
+
+    /* ---- button ---- */
+    .login-card button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #5563DE;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-card button:hover {
+      background-color: #3545A6;
+    }
+
+    /* ---- small helper text ---- */
+    .note {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-  <h3>Enter Password</h3>
-  <input type="password" id="pw">
-  <button onclick="checkPw()">Submit</button>
+  <div class="login-card">
+    <h3>Enter Password</h3>
+    <input type="password" id="pw" placeholder="Password">
+    <button onclick="checkPw()">Submit</button>
+    <div class="note">Authorized users only</div>
+  </div>
 
   <script>
-    // ⚠️ this password is visible in the source code
     const secret = "Dexter123";
 
     function checkPw() {
-      if (document.getElementById("pw").value === secret) {
-        // go to your “real” homepage
-        window.location.href = "main.html";  
+      const pw = document.getElementById("pw").value.trim();
+      if (pw === secret) {
+        window.location.href = "main.html";
       } else {
-        alert("Incorrect password");
+        alert("Incorrect password, please try again.");
+        document.getElementById("pw").value = "";
       }
     }
   </script>
