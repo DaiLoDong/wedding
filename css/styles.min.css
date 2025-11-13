@@ -779,6 +779,14 @@ header .member-actions {
 #video-content p {
     color: #fff;
 }
+
+@media (max-width: 768px) {
+  #bgndVideo { display: none !important; }
+  #video-bg {
+    background: url("DaiLoDong/wedding/victoriafallback.jpg") center center / cover no-repeat;
+  }
+}
+
 #map-canvas {
     height: 80vh;
     width: 100%;
@@ -788,13 +796,13 @@ header .member-actions {
     position: relative;
     z-index: 2;
     margin-top: -80vh;
-    margin-bottom: 50vh;
+    margin-bottom: 80vh;
 }
 
 @media (max-width: 767px) {
   #map-content-wrapper {
     margin-top: -80vh;
-    margin-bottom: 80vh;
+    margin-bottom: 100vh;
   }
 }
 
