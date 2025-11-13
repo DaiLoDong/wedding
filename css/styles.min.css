@@ -787,7 +787,7 @@ header .member-actions {
 #map-content-wrapper {
     position: relative;
     z-index: 2;
-    margin-top: -100px;
+    margin-top: -500px;
     margin-bottom: 150px;
 }
 #map-content {
