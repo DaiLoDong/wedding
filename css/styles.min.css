@@ -790,6 +790,14 @@ header .member-actions {
     margin-top: -80vh;
     margin-bottom: 50vh;
 }
+
+@media (max-width: 767px) {
+  #map-content-wrapper {
+    margin-top: -80vh;
+    margin-bottom: 80vh;
+  }
+}
+
 #map-content {
     margin-top: 40px;
     padding: 50px 60px;
