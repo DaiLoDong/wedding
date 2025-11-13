@@ -184,7 +184,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Eddy and Sara's Wedding",
+            title: "Wedding - Edward & Sara",
 
             // Event start date
             start: new Date('Oct 10, 2027 12:00'),
@@ -200,7 +200,7 @@ $(document).ready(function () {
             address: '2005 Sooke Rd, Victoria, BC V9B 5Y2',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Edward at +1 587 *** ****."
+            description: "We can't wait to see you on our big day. For any queries or issues, please contact Edward at +1 587 709 9777."
         }
     });
 
