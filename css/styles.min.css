@@ -782,10 +782,12 @@ header .member-actions {
 #map-canvas {
     height: 700px;
     width: 100%;
+    z-index: 1;
 }
 #map-content-wrapper {
     position: relative;
-    margin-top: -702px;
+    z-index: 2;
+    margin-top: -100px;
     margin-bottom: 150px;
 }
 #map-content {
