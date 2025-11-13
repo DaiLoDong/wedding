@@ -395,56 +395,31 @@
             <div class="col-md-8 col-md-offset-2">
                 <h3>What are you waiting for?</h3>
                 <p>We would greatly appreciate if you could RSVP before 1st of June 2027</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
+                    <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" name="email" placeholder="name@email.com" required>
+                            </div>
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i>
+                                <input name="name" placeholder="First and last name" required>
+                            </div>
+                            <div class="form-input-group">
+                                <i class="fa fa-cutlery"></i>
+                                <input type="text" name="food" placeholder="Chicken, Beef, Vegetarian, Vegan" required>
+                            </div>
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i>
+                                <input type="number" name="invite_code" id="invite_code" min="0" placeholder="Invite code" required>
+                            </div>
 
-                    
-                    <div class="row">
-                        <div class="col-md-8 col-sm-8">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="name@email.com"
-                                                                     required>
+                            <div id="alert-wrapper" class="m-t"></div>
+                            <button class="btn-fill rsvp-btn">Confirm and submit</button>
                             </div>
                         </div>
-                        <div class="col-md-8 col-sm-8">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="First and last name"
-                                                                 required>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-8 col-sm-8">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="text" name="food"
-                                                                  placeholder="Chicken, Beef, Vegetarian, Vegan"
-                                                                  required>
-                            </div>
-                        </div>
-                  
-                        <div class="col-md-8 col-sm-8">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    
-                    <div class="row">
-                        <div class="col-md-8" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        Confirm and submit
-                    </button>
-                </form>
+                    </form>
             </div>
         </div>
     </div>
