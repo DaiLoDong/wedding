@@ -399,18 +399,20 @@
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
+
+                    
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
+                                                                     placeholder="name@email.com"
                                                                      required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
+                                                                 placeholder="First and last name"
                                                                  required>
                             </div>
                         </div>
@@ -428,9 +430,20 @@
                               pattern="[A-Za-zÀ-ž\s\-,']+"
                               required
                             />
-                      </div>
+                          </div>
+                        </div>
+                  
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                                                class="" min="0"
+                                                                placeholder="Invite code"
+                                                                required>
+                            </div>
+                        </div>
+                        
                     </div>
-                  </div>
+
                     
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
