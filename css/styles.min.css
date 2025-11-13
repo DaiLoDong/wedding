@@ -780,24 +780,16 @@ header .member-actions {
     color: #fff;
 }
 #map-canvas {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     z-index: 1;
 }
 #map-content-wrapper {
     position: relative;
     z-index: 2;
-    margin-top: -70vh;
+    margin-top: -60vh;
     margin-bottom: 50vh;
 }
-
-@media (max-width: 767px) {
-  #map-content-wrapper {
-    margin-top: -60vh;
-    margin-bottom: 700px;
-  }
-}
-
 #map-content {
     margin-top: 40px;
     padding: 50px 60px;
