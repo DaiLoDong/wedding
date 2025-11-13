@@ -321,7 +321,7 @@
 
 <section id="video-bg" class="hidden-sm hidden-xs">
     <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://youtu.be/v3Ze7lyDniU?si=F7Oy4j4HbaOVQpXA',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:0, stopAt:85, opacity:1}">
+         data-property="{videoURL:'https://youtu.be/v3Ze7lyDniU',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:0, stopAt:85, opacity:1}">
     </div>
     <div id="video-content">
         <h5>Victoria</h5>
@@ -417,10 +417,14 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="1"
-                                                                  placeholder="Long-term partner?"
-                                                                  required>
+                                <i class="fa fa-users"></i>
+                                    <select name="food" class="form-control" required>
+                                    <option value="" disabled selected>Choose a food option</option>
+                                    <option value="chicken">chicken something</option>
+                                    <option value="beef">beef something</option>
+                                    <option value="vegetarian">veggie something</option>
+                                    <option value="vegan">vegan something</option>
+                                      </select>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
