@@ -393,7 +393,7 @@
     <!-- RSVP Section -->
 <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-4">
+            <div class="col-md-8 col-md-offset-0">
                 <h3>What are you waiting for?</h3>
                 <p>We would greatly appreciate if you could RSVP before 1st of June 2027</p>
                 <form id="rsvp-form" class="rsvp-form"
@@ -420,17 +420,11 @@
                     
                     <div class="row">
                         <div class="col-md-8 col-sm-8">
-                          <div class="form-input-group">
-                            <i class="fa fa-utensils"></i>
-                                <input
-                                  type="text"
-                                  name="food"
-                                  class="form-control"
-                                  placeholder="Chicken, Beef, Vegetarian, Vegan"
-                                  pattern="[A-Za-zÀ-ž\s\-,']+"
-                                  required
-                                />
-                          </div>
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="text" name="food"
+                                                                  placeholder="Chicken, Beef, Vegetarian, Vegan"
+                                                                  required>
+                            </div>
                         </div>
                   
                         <div class="col-md-8 col-sm-8">
@@ -446,7 +440,7 @@
 
                     
                     <div class="row">
-                        <div class="col-md-6" id="alert-wrapper"></div>
+                        <div class="col-md-8" id="alert-wrapper"></div>
                     </div>
                     <button class="btn-fill rsvp-btn">
                         Confirm and submit
