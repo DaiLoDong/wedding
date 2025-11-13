@@ -93,7 +93,7 @@ $(document).ready(function () {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
                     "border-bottom": "none",
-                    "padding": "30px 0"
+                    "padding": "50px 0"
                 });
                 $('header .member-actions').css({
                     "top": "26px",
@@ -108,10 +108,10 @@ $(document).ready(function () {
                     "padding": "30px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "21px",
+                    "top": "41px",
                 });
                 $('header .navicon').css({
-                    "top": "28px",
+                    "top": "48px",
                 });
             }
         });
