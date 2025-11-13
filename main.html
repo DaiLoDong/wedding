@@ -451,6 +451,33 @@
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script>
+  // Initialize the background video (desktop)
+  $("#bgndVideo").YTPlayer({
+    videoURL: "https://youtu.be/v3Ze7lyDniU",
+    containment: "#video-bg",
+    autoPlay: true,
+    mute: true,
+    showControls: false,
+    startAt: 0,
+    stopAt: 85,
+    opacity: 1
+  });
+
+  // ✅ Fallback image for mobile
+  $(function () {
+    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      $("#bgndVideo").hide();
+      $("#video-bg").css({
+        background: "url('victoriafallback.jpg') center center / cover no-repeat"
+      });
+    }
+  });
+</script>
+
+
+
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
 <script async defer
