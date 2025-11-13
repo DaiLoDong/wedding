@@ -780,12 +780,12 @@ header .member-actions {
     color: #fff;
 }
 #map-canvas {
-    height: 500px;
+    height: 700px;
     width: 100%;
 }
 #map-content-wrapper {
     position: relative;
-    margin-top: -502px;
+    margin-top: -702px;
     margin-bottom: 150px;
 }
 #map-content {
