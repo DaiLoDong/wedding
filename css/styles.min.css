@@ -78,7 +78,11 @@ h5 {
     border-color: #d3b56a;
 }
 .btn-small {
-    padding: 8px 30px;
+    display: inline-flex;
+  align-items: center;   /* vertical centering of text */
+  justify-content: center; /* horizontal centering of text */
+  padding: 8px 30px;
+  line-height: normal;   /* avoids extra vertical space */
 }
 .btn-large {
     padding: 15px 40px;
