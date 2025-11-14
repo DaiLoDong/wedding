@@ -804,13 +804,17 @@ header .member-actions {
     z-index: 2;
     pointer-events: none;      /* allow map clicks through unless re‑enabled */
     display: flex;
-    align-items: center;       /* center vertically */
+    align-items: flex-start;       /* center vertically */
     justify-content: center;   /* center horizontally in section */
+}
+.overlay-inner {
+  width: 100%;               /* restore column stretching */
+  max-width: 50vw;         /* cap width so content doesn’t go edge to edge */
 }
 #map-content {
     pointer-events: auto;      /* interactive elements in overlay */
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding: 50px 60px;
     background: #fff;
     -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
@@ -836,7 +840,7 @@ header .member-actions {
 }
 /* Space between map and RSVP section */
 #map {
-  margin-bottom: 80px;               /* ensures RSVP doesn’t clip into map */
+  margin-bottom: 20px;               /* ensures RSVP doesn’t clip into map */
 }
 .rsvp {
     padding-top: 80px;
