@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // button click
   btn.addEventListener("click", async () => {
     console.log("clicked button");
-      const url = `https://www.google.com/flights?hl=en#flt=.${DEST}.${DEPART_DATE}*${DEST}..${RETURN_DATE}`;
+      const url = `https://www.google.com/travel/flights?q=flights%20to%20${DEST}%20on%20${DEPART_DATE}%20return%20${RETURN_DATE}`;
     window.open(url, "_blank");
   });
 });
