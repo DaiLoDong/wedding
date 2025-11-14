@@ -86,7 +86,7 @@
         },
 
         ical: function(event) {
-            return this.ics(event, 'icon-ical', 'iCal');
+            return this.ics(event, 'icon-ical', 'Apple iCal');
         },
 
         outlook: function(event) {

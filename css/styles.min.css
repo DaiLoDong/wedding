@@ -850,9 +850,9 @@ header .member-actions {
     transform: translateY(-50%);
 }
 .rsvp .rsvp-form .form-input-group i.fa-user,
-.rsvp .rsvp-form .form-input-group i.fa-cutlery,
+.rsvp .rsvp-form .form-input-group i.fa-globe,
 .rsvp .rsvp-form .form-input-group i.fa-envelope,
-.rsvp .rsvp-form .form-input-group .fa-key {
+.rsvp .rsvp-form .form-input-group i.fa-key {
     font-size: 14px;
     position: absolute;
     top: 50%;
