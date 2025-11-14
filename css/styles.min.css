@@ -781,14 +781,14 @@ header .member-actions {
     color: #fff;
 }
 #map-canvas {
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     z-index: 1;
 }
 #map-content-wrapper {
     position: relative;
     z-index: 2;
-    margin-top: -60vh;
+    margin-top: -70vh;
     margin-bottom: 50vh;
 }
 #map-content {
