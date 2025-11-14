@@ -345,7 +345,7 @@ section .header {
 .hero {
     min-height: 750px;
     max-height: 750px;
-    background: url("../img/eng_pics/E&SENG-33.jpg") center center;
+    background: url("../img/eng_pics/E&SENG-33.jpg") left center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
