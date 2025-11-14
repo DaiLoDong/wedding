@@ -344,7 +344,8 @@ section .header {
 }
 .hero {
     min-height: 750px;
-    background: url("../img/hero-min.jpg") center center;
+    max-height: 750px;
+    background: url("../img/eng_pics/E&SENG-33.jpg") center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -603,7 +604,7 @@ header .member-actions {
 }
 .events .leftcol {
     padding-right: 0px;
-    border-right: solid 1px #e6e9ea;
+    /* border-right: solid 1px #e6e9ea; */
 }
 .events .rightcol {
     padding-left: 0px;
