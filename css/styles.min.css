@@ -913,49 +913,30 @@ header .member-actions {
     color: #bcc1c3;
 }
 
-#countdown .digit-box {
-  background: #fff;                 /* matches site background */
-  padding: 20px 10px;
-  border-radius: 6px;
-  margin: 5px;
-  border: 1px solid #e6e9ea;        /* matches section dividers */
-  box-shadow: none;                 /* removes heavy digital glow */
-  text-align: center;
-}
 
-/* Countdown box styling */
+
 #countdown .digit-box {
   background: #fff;
   padding: 20px 10px;
   border-radius: 6px;
   margin: 5px;
-  border: 1px solid #e6e9ea;
-  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
 }
 
-/* All digits */
 #countdown .digit {
-  font-family: "Open Sans", sans-serif;
-  font-size: 38px;
-  font-weight: 600;
-  color: #3d4351;
-  display: inline-block;
-  letter-spacing: 1px;
+  font-family: "Open Sans", monospace;
+  font-size: 42px;
+  color: #3d4351; /* Digital green */
 }
 
-/* Make the Days digits wide enough for 3 characters */
-#days {
-  min-width: 90px;        /* REQUIRED for 100–999 to fit */
-}
-
-/* Keep labels consistent with your site */
 #countdown .label {
   margin-top: 8px;
   font-size: 14px;
   color: rgba(28, 54, 83, 0.6);
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
+
+
 
 footer .content {
     border-top: 1px solid #e6e9ea;
