@@ -920,12 +920,22 @@ header .member-actions {
   padding: 20px 10px;
   border-radius: 6px;
   margin: 5px;
+
+  /* Center content */
+  display: flex;
+  flex-direction: column;           /* stack digit and label vertically */
+  align-items: center;              /* horizontal center */
+  justify-content: center;          /* vertical center */
+  text-align: center;               /* fallback for older browsers */
 }
 
 #countdown .digit {
   font-family: "Open Sans", monospace;
   font-size: 42px;
-  color: #3d4351; /* Digital green */
+  font-weight: 600;
+  color: #3d4351;
+  display: inline-block;
+  letter-spacing: 1px;
 }
 
 #countdown .label {
@@ -933,6 +943,8 @@ header .member-actions {
   font-size: 14px;
   color: rgba(28, 54, 83, 0.6);
   text-transform: uppercase;
+  letter-spacing: 1px;
+  
 }
 
 
