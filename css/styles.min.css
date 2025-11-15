@@ -813,7 +813,7 @@ header .member-actions {
 }
 .overlay-inner {
   width: 100%;               /* restore column stretching */
-  max-width: 800px;         /* cap width so content doesn’t go edge to edge */
+  max-width: 900px;         /* cap width so content doesn’t go edge to edge */
 }
 #map-content {
     pointer-events: auto;      /* interactive elements in overlay */
@@ -912,6 +912,28 @@ header .member-actions {
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder {
     color: #bcc1c3;
 }
+
+#countdown .digit-box {
+  background: #111;
+  padding: 20px 10px;
+  border-radius: 6px;
+  margin: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+
+#countdown .digit {
+  font-family: "Courier New", monospace;
+  font-size: 42px;
+  color: #0f0; /* Digital green */
+}
+
+#countdown .label {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
 footer .content {
     border-top: 1px solid #e6e9ea;
     padding-bottom: 20px;
