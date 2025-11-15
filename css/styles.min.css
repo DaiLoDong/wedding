@@ -923,26 +923,36 @@ header .member-actions {
   text-align: center;
 }
 
-/* 3-digit support for Days */
-#countdown #days.digit {
-  font-size: 36px;                  /* slightly smaller for 3 digits */
-  letter-spacing: 1px;
-  min-width: 85px;                  /* ensures 100–999 fits */
-  display: inline-block;
+/* Countdown box styling */
+#countdown .digit-box {
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 6px;
+  margin: 5px;
+  border: 1px solid #e6e9ea;
+  text-align: center;
 }
 
+/* All digits */
 #countdown .digit {
   font-family: "Open Sans", sans-serif;
-  font-size: 42px;
-  color: #3d4351;                   /* matches h2/h3 text color */
+  font-size: 38px;
   font-weight: 600;
+  color: #3d4351;
+  display: inline-block;
+  letter-spacing: 1px;
 }
 
-/* Keep labels consistent with site text */
+/* Make the Days digits wide enough for 3 characters */
+#days {
+  min-width: 90px;        /* REQUIRED for 100–999 to fit */
+}
+
+/* Keep labels consistent with your site */
 #countdown .label {
   margin-top: 8px;
   font-size: 14px;
-  color: rgba(28, 54, 83, 0.6);     /* your site body text color */
+  color: rgba(28, 54, 83, 0.6);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
