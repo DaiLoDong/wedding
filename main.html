@@ -474,21 +474,18 @@
     <div class="map-container">
         <div id="map-canvas"></div>
 
-        <div id="map-content-wrapper" class="container pointer-events-none">
+        <!-- Show info button (hidden initially) -->
+        <div class="text-center">
+            <a id="btn-show-content" class="btn btn-accent btn-small pointer-events-auto toggle-map-content">
+                <i class="fa fa-info-circle"></i> Show info
+            </a>
+        </div>
+
+        <!-- Info box containing ceremony/reception info + show map button -->
+        <div id="map-content-wrapper" class="container pointer-events-auto">
             <div class="row">
                 <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6 text-center">
 
-                    <!-- Show map button -->
-                    <a id="btn-show-map" class="btn btn-accent btn-small pointer-events-auto">
-                        <i class="fa fa-map-marker"></i> Show map
-                    </a>
-
-                    <!-- Show info button (hidden initially) -->
-                    <a id="btn-show-content" class="btn btn-accent btn-small pointer-events-auto toggle-map-content">
-                        <i class="fa fa-info-circle"></i> Show info
-                    </a>
-
-                    <!-- The info content -->
                     <div id="map-content" class="pointer-events-auto">
                         <div class="row">
                             <div class="col-md-6">
@@ -506,6 +503,16 @@
                                 </p>
                             </div>
                         </div>
+
+                        <!-- Show map button inside the info box -->
+                        <div class="row text-center" style="margin-top:20px;">
+                            <div class="col-md-12">
+                                <a id="btn-show-map" class="btn btn-accent btn-small pointer-events-auto">
+                                    <i class="fa fa-map-marker"></i> Show map
+                                </a>
+                            </div>
+                        </div>
+
                     </div> <!-- /#map-content -->
 
                 </div> <!-- /.col -->

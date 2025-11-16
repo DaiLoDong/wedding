@@ -811,6 +811,10 @@ header .member-actions {
     align-items: flex-start;       /* center vertically */
     justify-content: center;   /* center horizontally in section */
 }
+#map-content-wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
 .overlay-inner {
   width: 100%;               /* restore column stretching */
   max-width: 80vw;         /* cap width so content doesn’t go edge to edge */
