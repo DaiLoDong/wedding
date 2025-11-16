@@ -58,8 +58,8 @@ h5 {
 }
 .btn-white:hover,
 .btn-white:focus {
-    color: rgba(55, 36, 40, 0.88);
-    border-color: rgba(55, 36, 40, 0.88);
+    color: #e8ca6f;
+    border-color: #e8ca6f;
 }
 .btn-fill {
     color: #fff;
