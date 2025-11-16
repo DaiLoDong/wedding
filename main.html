@@ -463,7 +463,6 @@
     </div>
 </section>
 
-
 <section id="map" class="section-padding">
 
     <div class="text-center">
@@ -475,12 +474,10 @@
         <div id="map-canvas"></div>
 
         <!-- Show info button (hidden initially) -->
-        <div class="text-center">
-            <a id="btn-show-content" class="btn btn-accent btn-small pointer-events-auto toggle-map-content"
-                style="position:absolute; top:20px; left:50%; transform:translateX(-50%); z-index:10;">
-                <i class="fa fa-info-circle"></i> Show info
-            </a>
-        </div>
+        <a id="btn-show-content" class="btn btn-accent btn-small pointer-events-auto toggle-map-content"
+            style="position:absolute; top:20px; left:50%; transform:translateX(-50%); z-index:10;">
+            <i class="fa fa-info-circle"></i> Show info
+        </a>
 
         <!-- Info box containing ceremony/reception info + show map button -->
         <div id="map-content-wrapper" class="container pointer-events-auto">
@@ -490,14 +487,22 @@
                     <div id="map-content" class="pointer-events-auto">
                         <div class="row">
                             <div class="col-md-6">
-                                <h5>Ceremony: Hatley Castle</h5>
+                                <h5>
+                                    <a href="#" class="map-location" data-lat="48.43458386438713" data-lng="-123.47274328929615">
+                                        Ceremony: Hatley Castle
+                                    </a>
+                                </h5>
                                 <p>2005 Sooke Rd, Victoria, BC V9B 5Y2 <br>
                                     <i class="fa fa-mobile"></i> 
                                     <a href="tel://+12503912600">+1 250 391 2600</a>
                                 </p>
                             </div>
                             <div class="col-md-6">
-                                <h5>Reception: Parkside Hotel</h5>
+                                <h5>
+                                    <a href="#" class="map-location" data-lat="48.42051187760476" data-lng="-123.36287993322887">
+                                        Reception: Parkside Hotel
+                                    </a>
+                                </h5>
                                 <p>810 Humboldt St, Victoria, BC V8V 5B1 <br>
                                     <i class="fa fa-mobile"></i> 
                                     <a href="tel://+12509401200">+1 250 940 1200</a>
@@ -522,7 +527,6 @@
 
     </div> <!-- /.map-container -->
 </section>
-
 
 <section class="rsvp text-center" id="rsvp">
     
