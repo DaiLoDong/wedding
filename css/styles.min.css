@@ -44,8 +44,8 @@ h5 {
 .btn:hover,
 .btn:focus {
     color: #fff;
-    border-color: #e8ca6f;
-    background-color: #e8ca6f;
+    border-color: rgba(55, 36, 40, 0.88);
+    background-color: rgba(55, 36, 40, 0.88);
 }
 .btn-white {
     font-size: 13px;
@@ -58,24 +58,24 @@ h5 {
 }
 .btn-white:hover,
 .btn-white:focus {
-    color: #e8ca6f;
-    border-color: #e8ca6f;
+    color: rgba(55, 36, 40, 0.88);
+    border-color: rgba(55, 36, 40, 0.88);
 }
 .btn-fill {
     color: #fff;
-    border: solid 2px #e8ca6f;
+    border: solid 2px rgba(55, 36, 40, 0.88);
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
     text-transform: uppercase;
-    background-color: #e8ca6f;
+    background-color: rgba(55, 36, 40, 0.88);
 }
 .btn-fill:hover,
 .btn-fill:focus {
     color: #fff;
-    background-color: #d3b56a;
-    border-color: #d3b56a;
+    background-color: rgba(55, 36, 40, 0.88);
+    border-color: rgba(55, 36, 40, 0.88);
 }
 .btn-small {
     display: inline-flex;
@@ -115,7 +115,7 @@ section.blog {
     margin: 0;
 }
 a {
-    color: #e8ca6f;
+    color: rgba(55, 36, 40, 0.88);
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
     -webkit-transition-duration: 200ms;
@@ -875,7 +875,7 @@ header .member-actions {
     position: relative;
 }
 .rsvp .rsvp-form .form-input-group i {
-    color: #e8ca6f;
+    color: rgba(55, 36, 40, 0.88);
     font-size: 14px;
 }
 .rsvp .rsvp-form .form-input-group i:after {
