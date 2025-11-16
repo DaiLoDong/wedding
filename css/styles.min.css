@@ -84,6 +84,9 @@ h5 {
   padding: 8px 30px;
   line-height: normal;   /* avoids extra vertical space */
 }
+.btn-small i {
+    margin-right: 8px;          /* space between icon and text */
+}
 .btn-large {
     padding: 15px 40px;
 }
@@ -888,7 +891,8 @@ header .member-actions {
 .rsvp .rsvp-form .form-input-group i.fa-user,
 .rsvp .rsvp-form .form-input-group i.fa-globe,
 .rsvp .rsvp-form .form-input-group i.fa-envelope,
-.rsvp .rsvp-form .form-input-group i.fa-key {
+.rsvp .rsvp-form .form-input-group i.fa-key 
+{
     font-size: 14px;
     position: absolute;
     top: 50%;
