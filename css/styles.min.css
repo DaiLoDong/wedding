@@ -813,7 +813,7 @@ header .member-actions {
 }
 .overlay-inner {
   width: 100%;               /* restore column stretching */
-  max-width: 900px;         /* cap width so content doesn’t go edge to edge */
+  max-width: 80vw;         /* cap width so content doesn’t go edge to edge */
 }
 #map-content {
     pointer-events: auto;      /* interactive elements in overlay */
