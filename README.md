@@ -3,7 +3,7 @@ My personal wedding website taking inspiration from wedding.rampatra.com
 
 # Highlights
 1. Slick and fully __responsive__ design.
-2. __RSVP feature__ which directly uploads data to a Google sheet using REST AP.
+2. __RSVP feature__ which directly uploads data to a Google sheet using REST API.
 3. __Receive email alerts__ when someone RSVPs.
 4. __Add to Calendar__ feature which supports four different calendars.
 5. __Secure__ and password protected.
