@@ -47,6 +47,7 @@ h5 {
     border-color: rgba(55, 36, 40, 0.88);
     background-color: rgba(55, 36, 40, 0.88);
 }
+
 .btn-white {
     font-size: 13px;
     border: solid 2px;
@@ -54,13 +55,17 @@ h5 {
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
-    border-color: #fff;
+    color: #000000 ;
+    border-color: #e8ca6f;
+    background-color: #e8ca6f;
 }
 .btn-white:hover,
 .btn-white:focus {
-    color: #e8ca6f;
-    border-color: #e8ca6f;
+    color: #000000;
+    border-color: #d3b56a;
+    background-color: #d3b56a;
 }
+
 .btn-fill {
     color: #fff;
     border: solid 2px rgba(55, 36, 40, 0.88);
