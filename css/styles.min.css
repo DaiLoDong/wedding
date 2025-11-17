@@ -4,7 +4,7 @@
 p {
     font-size: 15px;
     line-height: 29px;
-    color: rgba(28, 54, 83, 0.6);
+    color: rgb(28, 54, 83);
     padding-bottom: 20px;
 }
 h1 {
@@ -67,14 +67,14 @@ h5 {
 }
 
 .btn-fill {
-    color: #fff;
-    border: solid 2px rgba(76, 57, 45, 0.88);
+    color: rgba(55, 36, 40, 0.88);
+    border: solid 2px rgba(55, 36, 40, 0.88);
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
     text-transform: uppercase;
-    background-color: rgba(76, 57, 45, 0.88);
+    background-color: #fff;
 }
 .btn-fill:hover,
 .btn-fill:focus {
@@ -136,7 +136,7 @@ a:focus {
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    color: rgba(28, 54, 83, 0.6);
+    color: rgb(28, 54, 83);
     -webkit-text-size-adjust: 100%;
 }
 *:focus {
@@ -625,7 +625,7 @@ header .member-actions {
     font-size: 13px;
     font-style: italic;
     text-transform: lowercase;
-    color: rgba(28, 54, 83, 0.6);
+    color: rgb(28, 54, 83);
 }
 .blog {
     padding-bottom: 120px;
@@ -694,7 +694,7 @@ header .member-actions {
     font-size: 15px;
 }
 .blog figcaption a.blog-post-title {
-    color: rgba(28, 54, 83, 0.6);
+    color: rgb(28, 54, 83);
 }
 .blog figcaption a.blog-post-title:hover,
 .blog figcaption a.blog-post-title:focus {
@@ -954,7 +954,7 @@ header .member-actions {
 #countdown .label {
   margin-top: 8px;
   font-size: 14px;
-  color: rgba(28, 54, 83, 0.6);
+  color: rgb(28, 54, 83);
   text-transform: uppercase;
   letter-spacing: 1px;
   
