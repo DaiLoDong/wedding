@@ -125,26 +125,35 @@
   <script src="js/seating.js"></script>
 
   <script>
-    function renderResults(results) {
-      if (!results.length) {
-        $('#searchResults').html('<p>No matches found.</p>');
-        return;
+    function renderResults(list, query) {
+      const byTable = {};
+      list.forEach(g => {
+        if (!byTable[g.table]) byTable[g.table] = [];
+        byTable[g.table].push(g.name);
+      });
+
+      let html = '';
+      for (const table in byTable) {
+        html += `
+          <div class="animated fadeInUp" style="margin-bottom:20px;">
+            <h4>Table <span class="label-accent">${table}</span></h4>
+            <p>${byTable[table].join(', ')}</p>
+          </div>`;
       }
-      const html = results.map(g => `
-        <div class="animated fadeInUp" style="margin-bottom:10px;">
-          <h4><strong>${g.name}</strong></h4>
-          <p>Table <span class="label-accent">${g.table}</span></p>
-        </div>`).join('');
+      if (!html) html = `<p>No matches found for "${query}".</p>`;
       $('#searchResults').html(html);
     }
 
     $('#searchBox').on('input', function () {
       const q = $(this).val().toLowerCase().trim();
       if (!q) return $('#searchResults').empty();
-      const results = seatingData.filter(g =>
-        g.name.toLowerCase().includes(q)
+
+      let results = seatingData.filter(g =>
+        g.name.toLowerCase().includes(q) ||
+        String(g.table).toLowerCase().includes(q)   // matches table names or numbers
       );
-      renderResults(results);
+
+      renderResults(results, q);
     });
   </script>
 </body>
