@@ -7,19 +7,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Find your seat for Edward & Sara's wedding">
 
-  <!-- identical stylesheet stack as main.html -->
+  <!-- same stylesheet stack as main.html -->
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/flexslider.css">
-  <link rel="stylesheet" href="css/style.css">      <!-- main site theme -->
+  <link rel="stylesheet" href="css/styles.min.css">     <!-- main theme -->
   <link rel="stylesheet" href="css/queries.css">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+  <style>
+    /* minor stylistic tweaks for seating section */
+    .section-padding-first { padding-top: 180px; } /* room below fixed header */
+    .label-accent {
+      background:#e8ca6f;
+      color:#000;
+      padding:4px 10px;
+      border-radius:20px;
+      font-weight:600;
+    }
+  </style>
 </head>
 
 <body id="top">
-  <!-- Navigation (copied directly so it behaves the same) -->
+
+  <!-- Navigation identical to main.html -->
   <section class="navigation">
     <header>
       <div class="header-content">
@@ -39,7 +54,8 @@
             <ul class="member-actions">
               <li><a href="main.html#video-bg" class="login">Venue</a></li>
               <li>
-                <a href="main.html#rsvp" class="btn-white btn-small"
+                <a href="main.html#rsvp"
+                   class="btn-white btn-small"
                    style="color:#000!important;">RSVP</a>
               </li>
             </ul>
@@ -52,8 +68,8 @@
     </header>
   </section>
 
-  <!-- Seating Section -->
-  <section id="chart" class="section-padding text-center" style="margin-top:150px;">
+  <!-- Seating Chart Section -->
+  <section id="chart" class="features section-padding section-padding-first text-center">
     <div class="container">
       <h2 class="header">Find Your Seat</h2>
       <p>Search for your name to see your assigned table.</p>
@@ -70,29 +86,32 @@
     </div>
   </section>
 
-  <!-- Footer (same as main page) -->
+  <!-- Footer identical to main page -->
   <footer>
     <div class="container text-center content">
       <span class="to-top-wrapper">
         <a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a>
       </span>
-      <p>Crafted by Edward for Sara<br>
-         Photo credits 
-         <a href="https://www.instagram.com/SvandaPerspective" 
-            target="_blank" rel="noopener noreferrer">
-            @SvandaPerspective <i class="fa fa-instagram"></i>
-         </a>
+      <p>
+        Crafted by Edward for Sara<br>
+        Photo credits: 
+        <a href="https://www.instagram.com/SvandaPerspective"
+           target="_blank" rel="noopener noreferrer">
+           @SvandaPerspective <i class="fa fa-instagram"></i>
+        </a>
       </p>
     </div>
   </footer>
 
-  <!-- Scripts (same order as main) -->
+  <!-- Scripts in same order as main.html -->
   <script src="js/vendor/jquery-1.11.2.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/seating.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/seating.js"></script>  <!-- your guest data -->
 
   <script>
-    // seatingData is declared in js/seating.js
+    // seatingData array declared in js/seating.js
     function renderResults(results) {
       if (!results.length) {
         $('#searchResults').html('<p>No matches found.</p>');
@@ -101,7 +120,7 @@
       const html = results.map(g => `
         <div class="animated fadeInUp" style="margin-bottom:10px;">
           <h4><strong>${g.name}</strong></h4>
-          <p>Table <span class="label-accent">${g.table}</span></p>
+          <p>Table <span class="label-accent">${g.table}</span></p>
         </div>
       `).join('');
       $('#searchResults').html(html);
@@ -116,16 +135,5 @@
       renderResults(results);
     });
   </script>
-
-  <style>
-    /* small accent label to match the gold tone from your theme */
-    .label-accent {
-      background:#e8ca6f;
-      color:#000;
-      padding:4px 10px;
-      border-radius:20px;
-      font-weight:600;
-    }
-  </style>
 </body>
 </html>
