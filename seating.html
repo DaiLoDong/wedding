@@ -59,7 +59,7 @@
   </section>
 
   <!-- Hero / Banner -->
-  <section class="hero" style="background:#f69d52; padding:80px 0 60px 0;">
+  <section class="hero" style="background:#f69d52;">
     <div class="container text-center">
       <img src="img/logo-lg.png" alt="Edward and Sara" style="max-width:250px;">
       <h2 class="header" style="margin-top:30px;">Find Your Seat</h2>
@@ -107,14 +107,7 @@
   <script src="js/seating.js"></script>
 
   <script>
-    // Example guests — you can replace or load dynamically via .json:
-    let seatingData = [];
-
-$.getJSON("js/seating.js", data => {
-  seatingData = data;
-});
-
-    function renderResults(results) {
+  function renderResults(results) {
       if (!results.length) {
         $('#searchResults').html('<p>No matches found.</p>');
         return;
@@ -134,7 +127,9 @@ $.getJSON("js/seating.js", data => {
         $('#searchResults').empty();
         return;
       }
-      const results = seatingData.filter(g => g.name.toLowerCase().includes(q));
+      const results = seatingData.filter(g =>
+        g.name.toLowerCase().includes(q)
+      );
       renderResults(results);
     });
   </script>
