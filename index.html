@@ -2,28 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Private Page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Private Access | Edward & Sara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Private page for guests of Edward & Sara's wedding.">
+
+  <!-- same site stylesheets -->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"
+        onerror="loadCssFromCDN('font-awesome.css')">
+
   <style>
-    /* ---- overall page layout ---- */
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      background: linear-gradient(135deg, #74ABE2, #5563DE);
+    body {
+      background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%);
+      font-family: "Open Sans", sans-serif;
+    }
+
+    /* Center wrapper */
+    .hero-login {
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      position: relative;
     }
 
-    /* ---- card container ---- */
     .login-card {
       background: #fff;
       padding: 40px 35px;
       border-radius: 10px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      max-width: 320px;
+      max-width: 340px;
       width: 100%;
       text-align: center;
+      margin-top: 20px;
     }
 
     .login-card h3 {
@@ -34,7 +51,6 @@
       letter-spacing: 0.5px;
     }
 
-    /* ---- form fields ---- */
     .login-card input[type="password"] {
       width: 100%;
       padding: 10px 12px;
@@ -43,16 +59,14 @@
       font-size: 15px;
       outline: none;
       transition: border-color 0.3s;
-      box-sizing: border-box;
     }
 
     .login-card input[type="password"]:focus {
       border-color: #5563DE;
     }
 
-    /* ---- button ---- */
     .login-card button {
-      margin-top: 15px;
+      margin-top: 20px;
       width: 100%;
       padding: 10px;
       background-color: #5563DE;
@@ -69,21 +83,47 @@
       background-color: #3545A6;
     }
 
-    /* ---- small helper text ---- */
     .note {
       margin-top: 20px;
       font-size: 13px;
       color: #777;
     }
+
+    footer {
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+      padding: 20px;
+    }
   </style>
 </head>
-<body>
-  <div class="login-card">
-    <h3>Enter Password</h3>
-    <input type="password" id="pw" placeholder="Password">
-    <button onclick="checkPw()">Submit</button>
-    <div class="note">Authorized users only</div>
-  </div>
+
+<body id="top">
+  <!-- Navigation header (simple) -->
+  <section class="navigation">
+    <header>
+      <div class="header-content text-center">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="Edward & Sara Logo" style="height:60px;"></a>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- Hero login -->
+  <section class="hero-login">
+    <img src="img/logo-lg.png" alt="Edward & Sara" style="width:220px;">
+    <div class="login-card animated fadeInUp">
+      <h3>Enter Password</h3>
+      <input type="password" id="pw" placeholder="Password">
+      <button onclick="checkPw()">Submit</button>
+      <div class="note">Authorized guests only</div>
+    </div>
+  </section>
+
+  <footer>
+    Crafted with ❤️ by Edward for Sara
+  </footer>
 
   <script>
     const secret = "Dexter123";
@@ -91,6 +131,7 @@
     function checkPw() {
       const pw = document.getElementById("pw").value.trim();
       if (pw === secret) {
+        // redirect to your protected page
         window.location.href = "main.html";
       } else {
         alert("Incorrect password, please try again.");
