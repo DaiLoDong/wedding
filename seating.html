@@ -3,96 +3,141 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <title>Seating Chart | Edward & Sara</title>
-  <meta name="description" content="Find your seat for Edward & Sara's wedding.">
+  <title>Edward & Sara | Seating Chart</title>
+  <meta name="description" content="Search your name to find your seat for Edward & Sara's wedding.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Edward & Sara | Seating Chart">
+  <meta property="og:description" content="Find your seat for the wedding celebration">
+  <meta property="og:type" content="website">
 
-  <!-- Reuse the same stylesheets -->
+  <!-- Your same primary styles -->
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/flexslider.css">
   <link rel="stylesheet" href="css/styles.min.css">
   <link rel="stylesheet" href="css/queries.css">
-  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css"
-        onerror="loadCssFromCDN('animate.css')">
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"
-        onerror="loadCssFromCDN('font-awesome.css')">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+  <style>
+    /* Minor custom touches for better consistency */
+    body {
+      color: #333;
+    }
+
+    .hero {
+      background: url("img/eng_pics/E&SENG-33.jpg") center center / cover no-repeat;
+      position: relative;
+      padding: 0;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      padding: 160px 0 120px 0;
+      z-index: 2;
+      color: #fff;
+    }
+
+    .hero-content h2 {
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    #chart input {
+      margin-top: 20px;
+      border-radius: 30px;
+      border: 2px solid #f69d52;
+      padding: 15px;
+      font-size: 18px;
+    }
+
+    #searchResults h4 {
+      color: #333;
+    }
+
+    #searchResults .label-accent {
+      background-color: #f69d52;
+      color: #fff;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 
 <body id="top">
-  <!-- Navigation -->
+  <!-- Navigation (copied from main) -->
   <section class="navigation">
     <header>
       <div class="header-content">
         <div class="logo">
-          <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+          <a href="main.html"><img src="img/logo.png" alt="Edward & Sara Logo"></a>
         </div>
         <div class="header-nav">
           <nav>
             <ul class="primary-nav">
-              <li><a href="index.html#events">Events</a></li>
-              <li><a href="index.html#faq">FAQ</a></li>
-              <li><a href="index.html#china">China Ceremony</a></li>
-              <li><a href="index.html#eng-pics">Engagement</a></li>
-              <li><a href="index.html#gifts">Gifts</a></li>
-              <li><a href="seating.html">Seating</a></li>
+              <li><a href="main.html#events">Events</a></li>
+              <li><a href="main.html#faq">FAQ</a></li>
+              <li><a href="main.html#china">China Ceremony</a></li>
+              <li><a href="main.html#eng-pics">Engagement</a></li>
+              <li><a href="main.html#gifts">Gifts</a></li>
+              <li><a href="seating.html" style="color:#f69d52;">Seating</a></li>
             </ul>
             <ul class="member-actions">
-              <li><a href="index.html#video-bg" class="login">Venue</a></li>
-              <li>
-                <a href="index.html#rsvp"
-                   class="btn-white btn-small"
-                   style="color:#000!important;">RSVP</a>
-              </li>
+              <li><a href="main.html#video-bg" class="login">Venue</a></li>
+              <li><a href="main.html#rsvp" class="btn-white btn-small" style="color:#000!important;">RSVP</a></li>
             </ul>
           </nav>
         </div>
-        <div class="navicon">
-          <a class="nav-toggle" href="#"><span></span></a>
-        </div>
+        <div class="navicon"><a class="nav-toggle" href="#"><span></span></a></div>
       </div>
     </header>
   </section>
 
-  <!-- Hero / Banner -->
-  <section class="hero" style="background:#f8f9fd; padding:80px 0 60px 0;">
-    <div class="container text-center">
-      <img src="img/logo-lg.png" alt="Edward and Sara" style="max-width:250px;">
-      <h2 class="header" style="margin-top:30px;">Find Your Seat</h2>
-      <p>Search for your name to see your assigned table.</p>
+  <!-- Hero Section (similar look & feel) -->
+  <section class="hero text-center">
+    <div class="container hero-content animated fadeIn">
+      <img src="img/logo-lg.png" alt="Edward & Sara" style="max-width:260px;">
+      <h2 class="header section-padding">Seating Chart</h2>
+      <p>Find your table by typing your name below.</p>
+      <a href="#chart" class="btn-white btn-accent btn-large rsvp-btn" style="margin-top:25px;">Search Seating</a>
     </div>
-    <div class="down-arrow floating-arrow">
-      <a href="#chart"><i class="fa fa-angle-down"></i></a>
-    </div>
+    <div class="down-arrow floating-arrow"><a href="#chart"><i class="fa fa-angle-down"></i></a></div>
   </section>
 
   <!-- Seating Chart Section -->
   <section id="chart" class="section-padding text-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <input id="searchBox"
-                 class="form-control input-lg text-center"
-                 type="text"
-                 placeholder="Type your name...">
-          <div id="searchResults" class="section-padding"></div>
+        <div class="col-md-8 col-md-offset-2 col-sm-12">
+          <input id="searchBox" class="form-control input-lg text-center" type="text" placeholder="Type your name...">
+          <div id="searchResults" class="section-padding animated fadeInUp"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer same as main page -->
   <footer>
     <div class="container text-center content">
       <span class="to-top-wrapper">
         <a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a>
       </span>
       <p>Crafted by Edward for Sara<br>
-         Photo credits: 
+         Photo credits:
          <a href="https://www.instagram.com/SvandaPerspective" target="_blank" rel="noopener noreferrer">
            @SvandaPerspective <i class="fa fa-instagram"></i>
          </a>
@@ -103,40 +148,43 @@
   <!-- Scripts -->
   <script src="js/vendor/jquery-1.11.2.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/seating.js"></script>
 
   <script>
-    // Example guests — you can replace or load dynamically via .json:
-    let seatingData = [];
+    // Ensure seatingData exists before searching
+    $(function () {
+      $('#searchBox').on('input', function () {
+        const q = $(this).val().toLowerCase().trim();
+        const $results = $('#searchResults');
 
-$.getJSON("js/seating.js", data => {
-  seatingData = data;
-});
+        if (!q) {
+          $results.empty();
+          return;
+        }
 
-    function renderResults(results) {
-      if (!results.length) {
-        $('#searchResults').html('<p>No matches found.</p>');
-        return;
-      }
-      const html = results.map(g => `
-        <div class="text-center animated fadeInUp" style="margin-bottom:10px;">
-          <h4><strong>${g.name}</strong></h4>
-          <p>Table: <span class="label label-accent">${g.table}</span></p>
-        </div>
-      `).join('');
-      $('#searchResults').html(html);
-    }
+        if (!Array.isArray(seatingData) || seatingData.length === 0) {
+          $results.html('<p>Guest data not loaded.</p>');
+          return;
+        }
 
-    $('#searchBox').on('input', function () {
-      const q = $(this).val().toLowerCase().trim();
-      if (!q) {
-        $('#searchResults').empty();
-        return;
-      }
-      const results = seatingData.filter(g => g.name.toLowerCase().includes(q));
-      renderResults(results);
+        const matches = seatingData.filter(g =>
+          g.name.toLowerCase().includes(q) || g.table.toLowerCase().includes(q)
+        );
+
+        if (!matches.length) {
+          $results.html('<p>No matches found.</p>');
+          return;
+        }
+
+        const html = matches.map(g => `
+          <div class="text-center animated fadeInUp" style="margin-bottom:20px;">
+            <h4><strong>${g.name}</strong></h4>
+            <p>Table: <span class="label label-accent">${g.table}</span></p>
+          </div>
+        `).join('');
+        $results.html(html);
+      });
     });
-  
-
   </script>
 </body>
 </html>
