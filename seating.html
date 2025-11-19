@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Seating Chart | Edward & Sara</title>
+  <meta name="description" content="Find your seat for Edward & Sara's wedding.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Reuse the same stylesheets -->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css"
+        onerror="loadCssFromCDN('animate.css')">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"
+        onerror="loadCssFromCDN('font-awesome.css')">
+
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body id="top">
+  <!-- Navigation -->
+  <section class="navigation">
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+        <div class="header-nav">
+          <nav>
+            <ul class="primary-nav">
+              <li><a href="index.html#events">Events</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="index.html#china">China Ceremony</a></li>
+              <li><a href="index.html#eng-pics">Engagement</a></li>
+              <li><a href="index.html#gifts">Gifts</a></li>
+              <li><a href="seating.html">Seating</a></li>
+            </ul>
+            <ul class="member-actions">
+              <li><a href="index.html#video-bg" class="login">Venue</a></li>
+              <li>
+                <a href="index.html#rsvp"
+                   class="btn-white btn-small"
+                   style="color:#000!important;">RSVP</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="navicon">
+          <a class="nav-toggle" href="#"><span></span></a>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- Hero / Banner -->
+  <section class="hero" style="background:#f8f9fd; padding:80px 0 60px 0;">
+    <div class="container text-center">
+      <img src="img/logo-lg.png" alt="Edward and Sara" style="max-width:250px;">
+      <h2 class="header" style="margin-top:30px;">Find Your Seat</h2>
+      <p>Search for your name to see your assigned table.</p>
+    </div>
+    <div class="down-arrow floating-arrow">
+      <a href="#chart"><i class="fa fa-angle-down"></i></a>
+    </div>
+  </section>
+
+  <!-- Seating Chart Section -->
+  <section id="chart" class="section-padding text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <input id="searchBox"
+                 class="form-control input-lg text-center"
+                 type="text"
+                 placeholder="Type your name...">
+          <div id="searchResults" class="section-padding"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center content">
+      <span class="to-top-wrapper">
+        <a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a>
+      </span>
+      <p>Crafted by Edward for Sara<br>
+         Photo credits: 
+         <a href="https://www.instagram.com/SvandaPerspective" target="_blank" rel="noopener noreferrer">
+           @SvandaPerspective <i class="fa fa-instagram"></i>
+         </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+
+  <script>
+    // Example guests — you can replace or load dynamically via .json:
+    let seatingData = [];
+
+$.getJSON("js/seating.json", data => {
+  seatingData = data;
+});
+
+    function renderResults(results) {
+      if (!results.length) {
+        $('#searchResults').html('<p>No matches found.</p>');
+        return;
+      }
+      const html = results.map(g => `
+        <div class="text-center animated fadeInUp" style="margin-bottom:10px;">
+          <h4><strong>${g.name}</strong></h4>
+          <p>Table: <span class="label label-accent">${g.table}</span></p>
+        </div>
+      `).join('');
+      $('#searchResults').html(html);
+    }
+
+    $('#searchBox').on('input', function () {
+      const q = $(this).val().toLowerCase().trim();
+      if (!q) {
+        $('#searchResults').empty();
+        return;
+      }
+      const results = seatingData.filter(g => g.name.toLowerCase().includes(q));
+      renderResults(results);
+    });
+  
+
+  </script>
+</body>
+</html>
