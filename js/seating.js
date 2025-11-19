@@ -1,8 +1,8 @@
 const seatingData = [
   { name: "Edward Dong", table: "Head Table" },
   { name: "Sara Li", table: "Head Table" },
-  { name: "Best Man – Jason Chan", table: "Head Table" },
-  { name: "Maid of Honour – Emily Wu", table: "Head Table" },
+  { name: "Best Man - Jason Chan", table: "Head Table" },
+  { name: "Maid of Honour - Emily Wu", table: "Head Table" },
 
   { name: "Grace Lee", table: "Table 1" },
   { name: "William Lee", table: "Table 1" },
