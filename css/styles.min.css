@@ -43,7 +43,7 @@ h5 {
 }
 .btn:hover,
 .btn:focus {
-    color: #000;
+    color: #fff;
     border-color: rgba(55, 36, 40, 0.88);
     background-color: rgba(55, 36, 40, 0.88);
 }
