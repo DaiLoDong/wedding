@@ -20,20 +20,23 @@
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
   <style>
-    /* --- Seat‑page tweaks --- */
+    /* --- Seat-page tweaks --- */
 
-    /* keep normal fonts/colors from main stylesheet */
-    .section-padding-first { padding-top: 180px; }
+    .section-padding-first {
+      padding-top: 180px;
+    }
 
     /* permanent dark header background so text stays visible */
     .navigation {
       background-color: rgba(55, 36, 40, 0.88);
     }
+
     header a,
     header ul.primary-nav li a,
     header ul.member-actions li a {
       color: #fff;
     }
+
     header ul.primary-nav li a:hover,
     header ul.member-actions li a:hover {
       color: #e8ca6f;
@@ -50,41 +53,45 @@
 </head>
 
 <body id="top">
+
   <!-- Navigation -->
   <section class="navigation">
-  <header>
-    <div class="header-content">
-      <div class="logo">
-        <a href="main.html"><img src="img/logo.png" alt="Logo"></a>
+    <header>
+      <div class="header-content">
+
+        <div class="logo">
+          <a href="main.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+
+        <!-- must come BEFORE navicon -->
+        <div class="header-nav">
+          <nav>
+            <ul class="primary-nav">
+              <li><a href="main.html#events">Events</a></li>
+              <li><a href="main.html#faq">FAQ</a></li>
+              <li><a href="main.html#china">China Ceremony</a></li>
+              <li><a href="main.html#eng-pics">Engagement</a></li>
+              <li><a href="main.html#gifts">Gifts</a></li>
+              <li><a href="seating.html">Seating</a></li>
+            </ul>
+
+            <ul class="member-actions">
+              <li><a href="main.html#video-bg" class="login">Venue</a></li>
+              <li>
+                <a href="main.html#rsvp" class="btn-white btn-small" style="color:#000!important;">RSVP</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- navicon MUST come last for JS to work -->
+        <div class="navicon">
+          <a class="nav-toggle" href="#"><span></span></a>
+        </div>
+
       </div>
-
-      <div class="navicon">
-        <a class="nav-toggle" href="#"><span></span></a>
-      </div>
-
-      <div class="header-nav">
-        <nav>
-          <ul class="primary-nav">
-            <li><a href="main.html#events">Events</a></li>
-            <li><a href="main.html#faq">FAQ</a></li>
-            <li><a href="main.html#china">China Ceremony</a></li>
-            <li><a href="main.html#eng-pics">Engagement</a></li>
-            <li><a href="main.html#gifts">Gifts</a></li>
-            <li><a href="seating.html">Seating</a></li>
-          </ul>
-
-          <ul class="member-actions">
-            <li><a href="main.html#video-bg" class="login">Venue</a></li>
-            <li>
-              <a href="main.html#rsvp" class="btn-white btn-small" style="color:#000!important;">RSVP</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-</section>
-
+    </header>
+  </section>
 
   <!-- Seating Section -->
   <section id="chart" class="features section-padding section-padding-first text-center">
@@ -112,7 +119,7 @@
       </span>
       <p>
         Crafted by Edward for Sara<br>
-        Photo credits: 
+        Photo credits:
         <a href="https://www.instagram.com/SvandaPerspective"
            target="_blank" rel="noopener noreferrer">
            @SvandaPerspective <i class="fa fa-instagram"></i>
@@ -122,17 +129,11 @@
   </footer>
 
   <!-- Scripts -->
-<script src="js/vendor/jquery-1.11.2.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
-
-<!-- your seating script -->
-<script src="js/seating.js"></script>
-
+  <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/seating.js"></script>
 
   <script>
     function renderResults(list, query) {
@@ -150,7 +151,10 @@
             <p>${byTable[table].join(', ')}</p>
           </div>`;
       }
-      if (!html) html = `<p>No matches found for "${query}".</p>`;
+
+      if (!html)
+        html = `<p>No matches found for "${query}".</p>`;
+
       $('#searchResults').html(html);
     }
 
@@ -160,11 +164,12 @@
 
       let results = seatingData.filter(g =>
         g.name.toLowerCase().includes(q) ||
-        String(g.table).toLowerCase().includes(q)   // matches table names or numbers
+        String(g.table).toLowerCase().includes(q)
       );
 
       renderResults(results, q);
     });
   </script>
+
 </body>
 </html>
