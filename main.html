@@ -695,5 +695,18 @@
     fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
 
+<script>
+  console.log('nav test script loaded');
+  $(function () {
+    $('.nav-toggle').off('click.test'); // remove old temporary handlers
+    $('.nav-toggle').on('click.test', function (e) {
+      e.preventDefault();
+      console.log('nav button clicked ✅');
+      $(this).toggleClass('active');
+      $('.header-nav').toggleClass('open');
+    });
+  });
+</script>
+
 </body>
 </html>
