@@ -628,7 +628,7 @@
 
   //Fallback image for mobile
   $(function () {
-    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+    const isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     if (isMobile) {
       $("#bgndVideo").hide();
       $("#video-bg").css({
