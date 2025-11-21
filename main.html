@@ -23,7 +23,7 @@
             // create new link tag
             const link = document.createElement('link');
             if (css === 'animate.css') {
-                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
             } else if (css === 'font-awesome.css') {
                 link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
             }
@@ -36,7 +36,7 @@
         // load js files from CDN if local node_modules fail
         function loadJsFromCDN(js) {
             if (js === 'waypoints.js') {
-                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"><\/script>');
             } else if (js === 'jquery.js') {
                 document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
             }
@@ -565,7 +565,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <h3>What are you waiting for?</h3>
                 <p>We would greatly appreciate if you could RSVP before 1st of June 2027</p>
-                    <form id="rsvp-form" class="rsvp-form" action="#" method="POST">
+                    <form id="rsvp-form" class="rsvp-form" action="" method="POST">
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
                             <div class="form-input-group">
@@ -617,10 +617,11 @@
 <script src="js/jquery.fancybox.pack.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
 <script src="js/flights.js"></script>
+
 
 <script>
   // Initialize the background video (desktop)
