@@ -846,7 +846,13 @@ header .member-actions {
 }
 .toggle-map-content {
     opacity: 0;
-    visibility: hidden;
+    /* visibility: hidden;  remove this */
+    pointer-events: none; /* prevents click while “hidden” */
+}
+
+.toggle-map-content.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 .pointer-events-none {
     pointer-events: none;
