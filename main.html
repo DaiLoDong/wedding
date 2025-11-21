@@ -641,6 +641,7 @@
 <script src="js/scripts.min.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdPplG-vlpjfsvwCHaqSTlstSTP_R_PTU&callback=initMap"></script>
+
 <!-- Google Analytics -->
 <script>
     (function (i, s, o, g, r, a, m) {
@@ -657,6 +658,8 @@
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
 </script>
+
+
 <script src="js/flights.js"></script>
 
 <script>
@@ -693,19 +696,6 @@
     if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
     js.src='https://weatherwidget.io/js/widget.min.js';
     fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-
-<script>
-  console.log('nav test script loaded');
-  $(function () {
-    $('.nav-toggle').off('click.test'); // remove old temporary handlers
-    $('.nav-toggle').on('click.test', function (e) {
-      e.preventDefault();
-      console.log('nav button clicked ✅');
-      $(this).toggleClass('active');
-      $('.header-nav').toggleClass('open');
-    });
-  });
 </script>
 
 </body>
