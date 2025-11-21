@@ -586,7 +586,7 @@
                             </div>
 
                             <div id="alert-wrapper" class="m-t"></div>
-                            <button class="btn-fill rsvp-btn">Confirm and submit</button>
+                            <button type="submit" class="btn-fill rsvp-btn">Confirm and submit</button>
                             </div>
                         </div>
                     </form>
@@ -618,6 +618,10 @@
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="js/vendor/ouical.js"></script>
+<script src="js/scripts.min.js"></script>
+<script src="js/flights.js"></script>
+
 <script>
   // Initialize the background video (desktop)
   $("#bgndVideo").YTPlayer({
@@ -631,7 +635,6 @@
     opacity: 1
   });
 
-
   //Fallback image for mobile
   $(function () {
     const isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -643,10 +646,11 @@
     }
   });
 </script>
-<script src="js/vendor/ouical.js"></script>
-<script src="js/scripts.min.js"></script>
+
+<!-- maps api key -->
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdPplG-vlpjfsvwCHaqSTlstSTP_R_PTU&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdPplG-vlpjfsvwCHaqSTlstSTP_R_PTU&callback=initMap">
+    </script>
 
 <!-- Google Analytics -->
 <script>
@@ -665,8 +669,6 @@
     ga('send', 'pageview');
 </script>
 
-
-<script src="js/flights.js"></script>
 
 <script>
   // Countdown target: October 10, 2027
