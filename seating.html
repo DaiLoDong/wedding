@@ -164,16 +164,14 @@
 
   <!-- try and fix nav menu -->
   <script>
+  console.log('nav test script loaded');
   $(function () {
-    $('.nav-toggle').on('click', function (e) {
+    $('.nav-toggle').off('click.test'); // remove old temporary handlers
+    $('.nav-toggle').on('click.test', function (e) {
       e.preventDefault();
+      console.log('nav button clicked ✅');
       $(this).toggleClass('active');
       $('.header-nav').toggleClass('open');
-    });
-
-    $('.header-nav li a').on('click', function () {
-      $('.nav-toggle').removeClass('active');
-      $('.header-nav').removeClass('open');
     });
   });
 </script>
