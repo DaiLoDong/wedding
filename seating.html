@@ -161,5 +161,22 @@
     });
   </script>
 
+
+  <!-- try and fix nav menu -->
+  <script>
+  $(function () {
+    $('.nav-toggle').on('click', function (e) {
+      e.preventDefault();
+      $(this).toggleClass('active');
+      $('.header-nav').toggleClass('open');
+    });
+
+    $('.header-nav li a').on('click', function () {
+      $('.nav-toggle').removeClass('active');
+      $('.header-nav').removeClass('open');
+    });
+  });
+</script>
+
 </body>
 </html>
