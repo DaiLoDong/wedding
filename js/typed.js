@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var text = el.innerText.trim();
     el.textContent = '';
 
-    typeEffect(el, text, 35, function () {
+    typeEffect(el, text, 20, function () {
       typing = false;
       currentIndex++;
     });
