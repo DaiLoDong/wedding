@@ -1003,3 +1003,24 @@ body.modal-open {
 .modal-body {
     padding: 25px;
 }
+
+/* Optional style for the typewriter effect */
+.typed {
+  opacity: 0.2;
+  transition: opacity 0.5s ease;
+  white-space: pre-wrap;
+}
+
+/* Active section and blinking cursor */
+.typed.active {
+  opacity: 1;
+}
+
+.typed.cursor::after {
+  content: '|';
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

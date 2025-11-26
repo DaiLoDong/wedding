@@ -115,12 +115,13 @@
 <section id="invitation" class="section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center typed">
                 <h2>We are getting married!</h2>
                 <p>The date is 10<sup>th</sup> of October 2027 and we would like you to be a part of it.</p>
             </div>
 
 
+<!-- countdown timer -->
         <div id="countdown" class="row">
             <div class="col-xs-3">
             <div class="digit-box">
@@ -157,7 +158,7 @@
     </div>
 </section>
 
-<section class="events section-padding text-center" id="events">
+<section class="events section-padding text-center typed" id="events">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -260,7 +261,7 @@
 </section>
 
 <section id="faq">
-    <div class="container-fluid">
+    <div class="container-fluid typed">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2 class="header">FAQ & Travel</h2>
@@ -322,7 +323,7 @@
 </section>
 
 
-<section id="china" class="section-padding">
+<section id="china" class="section-padding typed">
     <div class="container-fluid">
         <div class="row no-gutter">
 
@@ -442,7 +443,7 @@
 </section>
 
 <section id="gifts">
-    <div class="container">
+    <div class="container typed">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3 class="header">Gifts are not required</h3>
@@ -624,7 +625,9 @@
 <script src="js/vendor/ouical.js"></script>
 <script src="js/flights.js"></script>
 <script src="js/scripts.min.js"></script>
+<script src="js/typed.js"></script>
 
+<!-- youtube player and mobile fallback image -->
 <script>
 $(function () {
   const isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
@@ -657,24 +660,7 @@ $(function () {
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdPplG-vlpjfsvwCHaqSTlstSTP_R_PTU&callback=initMap">
     </script>
 
-<!-- Google Analytics -->
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-46465113-4', 'auto');
-    ga('send', 'pageview');
-</script>
-
-
+<!-- countdown timer -->
 <script>
   // Countdown target: October 10, 2027
   const targetDate = new Date("2027-10-10T12:00:00").getTime();
@@ -703,6 +689,7 @@ $(function () {
   setInterval(updateCountdown, 1000);
 </script>
 
+<!-- weather widget for victoria 7day -->
 <script>
 !function(d,s,id){
     var js,fjs=d.getElementsByTagName(s)[0];
@@ -711,5 +698,24 @@ $(function () {
     fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
 
+
+
+
+<!-- Google Analytics -->
+<!-- <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-46465113-4', 'auto');
+    ga('send', 'pageview');
+</script> -->
 </body>
 </html>
