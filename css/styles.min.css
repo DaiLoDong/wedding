@@ -1006,7 +1006,7 @@ body.modal-open {
 
 /* Optional style for the typewriter effect */
 .typed {
-  opacity: 0.2;
+  opacity: 0;
   transition: opacity 0.5s ease;
   white-space: pre-wrap;
 }

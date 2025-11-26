@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var text = el.innerText.trim();
     el.textContent = '';
 
-    typeEffect(el, text, 20, function () {
+    typeEffect(el, text, 10, function () {
       typing = false;
       currentIndex++;
     });
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     },
-    { threshold: 0.4 }
+    { threshold: 0.2 }
   );
 
   sections.forEach(function (section) {
