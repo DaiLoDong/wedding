@@ -60,5 +60,5 @@ const seatingData = [
   { name: "Chloe Moore", table: "Table 11" },
 
   { name: "Anthony Lopez", table: "Table 12" },
-  { name: "Maria Lopez", table: "Table 12" }
+  { name: "Maria Lopez", table: "Table 12", email:"" }
 ];

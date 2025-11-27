@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>Seating Chart | Edward & Sara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- identical stylesheet stack as main.html -->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  
+
+  <style>
+    /* --- Seat-page tweaks --- */
+
+    .section-padding-first {
+      padding-top: 180px;
+    }
+
+    /* permanent dark header background so text stays visible */
+    .navigation {
+      background-color: rgba(55, 36, 40, 0.88);
+    }
+
+    header a,
+    header ul.primary-nav li a,
+    header ul.member-actions li a {
+      color: #fff;
+    }
+
+    header ul.primary-nav li a:hover,
+    header ul.member-actions li a:hover {
+      color: #e8ca6f;
+    }
+
+    .label-accent {
+      background:#e8ca6f;
+      color:#000;
+      padding:4px 10px;
+      border-radius:20px;
+      font-weight:600;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- Navigation -->
+  <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="main.html"><img src="img/logo.png" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="main.html#events">Events</a></li>
+                            <li><a href="main.html#faq">FAQ</a></li>
+                            <li><a href="main.html#china">China Ceremony</a></li>
+                            <li><a href="main.html#eng-pics">Engagement</a></li>
+                            <li><a href="main.html#gifts">Gifts</a></li>
+                            <li><a href="seating.html">Seating</a></li>
+                            <li><a href="photos.html">Upload</a></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="main.html#video-bg" class="login">Venue</a></li>
+                            <li><a href="main.html#rsvp"
+                                class="btn-white btn-small text-center"
+                                style="display:inline-block; text-align:center; vertical-align:middle; color: #000000 !important;">
+                                RSVP
+                            </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+
+
+
+  <!-- photo upload form -->
+  <section id="chart" class="features section-padding section-padding-first text-center">
+    <div class="container text-center">
+        <h2>Upload Your Event Photos</h2>
+
+        <form id="uploadForm" class="form-inline" enctype="multipart/form-data">
+        <div class="form-group">
+            <input type="file" id="photoInput" class="form-control"
+                accept="image/*" multiple required>
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+
+        <div id="uploadStatus" class="text-info" style="margin-top:15px;"></div>
+
+        <div id="photoGallery" class="row" style="margin-top:25px;"></div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center content">
+      <span class="to-top-wrapper">
+        <a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a>
+      </span>
+      <p>
+        Crafted by Edward for Sara<br>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>
