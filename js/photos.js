@@ -1,8 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const API_ENDPOINT = "https://cgas.io/api/upload";
-  const API_KEY = "549f1514109244c0cfea9f8048d443f1c72bc7c6580c1d1b00f45c5b30f8ba2c ";                                                         // CGAS key
-  const SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbzbEnzPARqV1vsOLMuBwz6yUhe01Y69FS6Oo9BGds11HUp_ec1FXNEOw7OVAWc_7dqM/exec";   // your web‑app URL
+  const API_KEY = "549f1514109244c0cfea9f8048d443f1c72bc7c6580c1d1b00f45c5b30f8ba2c";                                                         // CGAS key
+  const SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbybCHEFNUZK2zUtcxm6mOBzXCntbC4Ijh0XfHKeKN-j51SPcJ4zDNQBUI574DTFKTue/exec";   // your web‑app URL
 
   const form = document.getElementById("uploadForm");
   const fileInput = document.getElementById("photoInput");
