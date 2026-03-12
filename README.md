@@ -20,7 +20,7 @@ My personal wedding website taking inspiration from wedding.rampatra.com
 10. __Weather Forecast__ to help guests dress for the weather especially if you have anything outdoors.
       Implemented via third party API.
 12. __Embedded Youtube video__ showing off your venue/location, also has fallback image for mobile support.
-13. __Custom domain__ hosted via GH Pages and my own squarespace domain. 
+13. __Custom domain__ hosted via GH Pages and my own cloudflare domain. 
 
 # Documentation
 The person I took inspriation from wrote a [blog post describing all the features of his wedding website](https://blog.rampatra.com/wedding-website) and how to
