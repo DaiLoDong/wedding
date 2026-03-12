@@ -23,6 +23,6 @@ My personal wedding website taking inspiration from wedding.rampatra.com
 13. __Custom domain__ hosted via GH Pages and my own cloudflare domain. 
 
 # Documentation
-The person I took inspriation from wrote a [blog post describing all the features of his wedding website](https://blog.rampatra.com/wedding-website) and how to
+The person I took inspriation from Ram Patra who wrote a [blog post describing all the features of his wedding website](https://blog.rampatra.com/wedding-website) and how to
 customize some of them according to your needs.
 Things not included: Changing the MD5
