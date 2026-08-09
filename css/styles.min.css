@@ -860,7 +860,7 @@ header .member-actions {
 }
 /* Space between map and RSVP section */
 #map {
-  margin-bottom: 20px;               /* ensures RSVP doesn’t clip into map */
+  margin-bottom: 20px;               /* ensures RSVP doesnt clip into map */
 }
 .rsvp {
     padding-top: 80px;
@@ -901,6 +901,7 @@ header .member-actions {
 .rsvp .rsvp-form .form-input-group i.fa-globe,
 .rsvp .rsvp-form .form-input-group i.fa-envelope,
 .rsvp .rsvp-form .form-input-group i.fa-cutlery,
+.rsvp .rsvp-form .form-input-group i.fa-spoon,
 .rsvp .rsvp-form .form-input-group i.fa-key 
 {
     font-size: 14px;
