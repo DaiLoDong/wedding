@@ -813,7 +813,7 @@ header .member-actions {
     width: 100%;
     height: 100%;
     z-index: 2;
-    pointer-events: none;      /* allow map clicks through unless re‑enabled */
+    pointer-events: none;      /* allow map clicks through unless reenabled */
     display: flex;
     align-items: flex-start;       /* center vertically */
     justify-content: center;   /* center horizontally in section */
@@ -824,7 +824,7 @@ header .member-actions {
 }
 .overlay-inner {
   width: 100%;               /* restore column stretching */
-  max-width: 1000px;         /* cap width so content doesn’t go edge to edge */
+  max-width: 1000px;         /* cap width so content doesnt go edge to edge */
 }
 #map-content {
     pointer-events: auto;      /* interactive elements in overlay */
