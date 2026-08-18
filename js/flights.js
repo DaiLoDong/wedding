@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // constants
   const DEST = "YYJ";
-  const DEPART_DATE = "2026-10-09";
-  const RETURN_DATE = "2026-10-11";
+  const DEPART_DATE = "2027-10-09";
+  const RETURN_DATE = "2027-10-11";
 
 // button click
   fbtn.addEventListener("click", async () => {
