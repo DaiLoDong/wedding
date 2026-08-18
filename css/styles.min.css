@@ -356,7 +356,7 @@ section .header {
 }
 .hero {
     min-height: 750px;
-    background: url("../img/eng_pics/china23.jpg") center center no-repeat;
+    background: url("../img/eng_pics/banner.jpg") center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
