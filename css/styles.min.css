@@ -288,7 +288,7 @@ section .header {
 .nav-toggle {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-150%);
     right: 15px;
     z-index: 999999;
     padding: 10px 35px 10px 0; /* Equalized top and bottom padding for exact visual centering */
@@ -451,7 +451,7 @@ header .member-actions {
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-45%);
+    transform: translateY(-50%);
     transition: all 300ms ease-in-out;
 }
 .down-arrow {
