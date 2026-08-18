@@ -455,6 +455,11 @@ header .member-actions {
     transform: translateY(-50%);
     transition: all 300ms ease-in-out;
 }
+@media screen and (max-width: 991px) {
+    .header-nav.open .member-actions {
+        transform: none;
+    }
+}
 .down-arrow {
     color: #fff;
     font-size: 30px;
