@@ -449,7 +449,7 @@ header .header-nav {
     display: inline-block;
 }
 header .member-actions {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
