@@ -12,9 +12,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.min.css">
   <link rel="stylesheet" href="css/queries.css">
-  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"
-        onerror="loadCssFromCDN('font-awesome.css')">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
     body {
@@ -115,7 +114,7 @@
     <img src="img/logo-lg.png" alt="Edward & Sara" style="width:220px;">
     <div class="login-card animated fadeInUp">
       <h3>Enter Password</h3>
-      <input type="password" id="pw" placeholder="Password">
+      <input type="password" id="pw" placeholder="Password" onkeydown="if(event.key==='Enter')checkPw()">
       <button onclick="checkPw()">Submit</button>
       <div class="note">Authorized guests only</div>
     </div>
