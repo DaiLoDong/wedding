@@ -98,8 +98,6 @@ h5 {
 .btn-margin-right {
     margin-right: 20px;
 }
-section.intro,
-section.features-extra,
 section.rsvp {
     background: #fff;
 }
@@ -373,12 +371,6 @@ section .header {
     color: #fff;
     margin-bottom: 40px;
 }
-.hero p.intro {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 80px;
-}
 .hero .hero-content {
     padding-top: 40%;
 }
@@ -472,32 +464,6 @@ header .member-actions {
 .share-bar {
     margin-top: 20px;
 }
-.intro span.icon {
-    font-size: 40px;
-    color: #e8ca6f;
-    font-weight: bold;
-}
-.intro-icon {
-    display: inline-block;
-    vertical-align: top;
-    padding: 6px 0 0 0;
-    margin-right: 20px;
-    width: 40px;
-}
-.intro-content {
-    display: inline-block;
-    width: 80%;
-}
-#intro {
-    padding-top: 40px;
-}
-#intro img {
-    width: 100%;
-    height: auto;
-}
-#intro p {
-    text-align: center;
-}
 .features {
     position: relative;
 }
@@ -507,120 +473,6 @@ header .member-actions {
 }
 .features h3 {
     margin: 0 0 20px 0;
-}
-.features span.icon {
-    font-size: 35px;
-    color: #e8ca6f;
-    font-weight: bold;
-}
-.features .feature-icon {
-    display: inline-block;
-    vertical-align: top;
-    padding: 6px 0 0 0;
-    margin-right: 20px;
-    width: 35px;
-}
-.features .feature-content {
-    display: inline-block;
-    width: 75%;
-}
-.features .intro-icon {
-    display: inline-block;
-    vertical-align: top;
-    padding: 6px 0 0 0;
-    margin-right: 20px;
-}
-.features .intro-content {
-    display: inline-block;
-    width: 80%;
-}
-.features ul.features-stack {
-    margin-top: 50px;
-}
-.features ul.features-stack li {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 1px #e6e9ea;
-}
-.features ul.features-stack li:last-child {
-    padding-bottom: 0px;
-    border-bottom: none;
-}
-.features .ipad-wrap {
-    width: 706px;
-    height: 1002px;
-    background: url("../img/ipad-device.png") no-repeat center center;
-    z-index: 1;
-}
-.features .iphone-wrap {
-    width: 304px;
-    height: 620px;
-    background: url("../img/iphone6.png") no-repeat center center;
-    position: absolute;
-    left: 530px;
-    bottom: 129px;
-    z-index: 2;
-}
-.features .device-showcase {
-    position: absolute;
-    bottom: -365px;
-    right: 61%;
-}
-.features .responsive-feature-img,
-.features-extra .responsive-feature-img {
-    display: none;
-}
-.devices {
-    position: relative;
-}
-.features-extra {
-    position: relative;
-    z-index: 3;
-}
-.features-extra .btn {
-    margin-top: 20px;
-}
-.features-extra .macbook-wrap {
-    position: absolute;
-    width: 916px;
-    height: 540px;
-    background: url("../img/macbook-pro.png") no-repeat center center;
-    top: 114px;
-    z-index: 4;
-    left: 50%;
-}
-.hero-strip {
-    margin-top: 120px;
-    background: #333844 url("../img/polygonal-bg.jpg") no-repeat center center;
-    padding-bottom: 190px;
-    position: relative;
-}
-.hero-strip i {
-    font-family: "Nunito", sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    color: #f69d52;
-    vertical-align: top;
-    margin-left: -8px;
-    font-style: normal;
-}
-.hero-strip h2 {
-    color: #fff;
-    margin: 0 0 20px 0;
-}
-.hero-strip p {
-    color: #acb1b4;
-}
-.hero-strip .btn {
-    margin-top: 10px;
-}
-.hero-strip .logo-placeholder {
-    width: 230px;
-    height: 230px;
-    position: absolute;
-    bottom: -285px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 .events .leftcol {
     padding-right: 0px;
